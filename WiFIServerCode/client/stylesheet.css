@@ -1,0 +1,82 @@
+/* main css file for our infographic */
+
+/************ CSS FOR TOP 3 *****/
+/* BLUE: #6dcff6;
+/* RED: #F10C49;
+/* Yellow: #F6D86B
+/* GREY: #E2DDD9;
+*/
+
+/************ CSS FOR TEXT *****/
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 20pt;
+  color:#f0f0f0;
+  font-weight: 400;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 10pt;
+  color:#f0f0f0;
+  margin-bottom:2px;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 16pt;
+  margin:0px;
+  color:#8a8a8a;
+}
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: justify;
+}
+text {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+}
+body {
+  font-family: 'Lato';
+  text-align: center;
+  padding-top: 2em;
+  overflow: scroll;
+  background-color: #171414;
+}
+
+/************ CSS FOR SVG ITEMS*****/
+svg{
+  display: relative;
+  margin: auto;
+}
+
+/************ CSS FOR BUTTONS AND ICONS *****/
+.container {
+  padding-top: 50px;
+}
+.button {
+    background-color: black; /* Green */
+    border: 4px solid #008CBA;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+

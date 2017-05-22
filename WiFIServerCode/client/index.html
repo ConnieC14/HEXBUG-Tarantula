@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <title> HEXBUG CONTROL </title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+  <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+  </head>
+
+<body class="main-page">
+    <h1> Hexbug WiFi Control </h1>
+    <h4> Buttons </h4>
+    <div class="container">
+      <input class="button" type="button" value="Turn Left" onclick="turnLeft()"></input>
+      <input class="button" type="button" value="Move Forward" onclick="forward()"></input>
+      <input class="button" type="button" value="Turn Right" onclick="turnRight()"> </input>
+      <input class="button" type="button" value="Move Backward" onclick="backward()"></input>
+    </div>
+
+
+    <div class="container">
+      <h1> Send Data </h1>
+      <input class="button" type="button" value="Send" onclick="send()"></input>
+    </div>
+
+    <script>
+      var Commands = [3];
+
+      function forward() {
+        var data = "F";
+        Commands.push(data);
+        console.log(data);
+      }
+
+      function turnRight() {
+        console.log("HI");
+        var data = "R";
+        Commands.push(data);
+        console.log(data);
+      }
+
+      function turnLeft() {
+        console.log("HI");
+        var data = "L";
+        Commands.push(data);
+        console.log(data);
+      }
+
+      function backward() {
+        var data = "B";
+        Commands.push(data);
+        console.log(data);
+      }
+
+      function send() {
+        var xhr = new XMLHttpRequest();
+        var url = "http://192.168.137.155/";//"http://10.17.4.220/";
+        xhr.open("POST", url);
+        console.log("SENT");
+        var data = Commands;
+        xhr.send(Commands);
+        Commands = [3];
+        console.log("DONE");
+      }
+    </script>
+
+
+  </body>
+</html>
