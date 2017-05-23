@@ -35,7 +35,7 @@ while(serial.is_open):
         time.sleep(2)
       else:
         time.sleep(2)
-
+# FUNCTIONS
 def forward():
   ser.write(b"W")
 
